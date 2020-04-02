@@ -1,0 +1,5 @@
+note over asiakas:
+Asiakas piirtää lähetettävän noten sivulle
+end note
+asiakas->palvelin: HTTP POST /new_note_spa
+palvelin-->asiakas: 201 {"message":"note created"}

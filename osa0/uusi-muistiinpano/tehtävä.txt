@@ -1,0 +1,18 @@
+asiakas->palvelin: HTTP POST /new_note
+palvelin-->asiakas: 302 /notes
+asiakas->palvelin: HTTP GET /notes
+palvelin-->asiakas: 200 /notes
+asiakas->palvelin: HTTP GET /main.css
+palvelin-->asiakas: 200 /main.css
+asiakas->palvelin: HTTP GET /main.js
+palvelin-->asiakas: 200 /main.js
+note over asiakas:
+asiakas alkaa suorittaa JS-koodia joka pyytää JSON-datan palvelimelta 
+end note
+asiakas->palvelin: HTTP GET /data.json
+palvelin-->asiakas: 200 /data.json
+note over asiakas:
+asiakas suorittaa tapahtumankäsittelijän joka renderöi muistiinpanot näytölle
+end note
+asiakas->palvelin: /favicon.ico
+palvelin->asiakas: 404 /favicon.ico

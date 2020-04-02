@@ -1,0 +1,16 @@
+asiakas->palvelin: HTTP GET /spa
+palvelin-->asiakas: 200 /spa
+asiakas->palvelin: HTTP GET /main.css
+palvelin-->asiakas: 200 /main.css
+asiakas->palvelin: HTTP GET /spa.js
+palvelin-->asiakas: 200 /spa.js
+note over asiakas:
+Asiakas suorittaa koodia joka pyytää JSON palvelimelta
+end note
+asiakas->palvelin: HTTP GET /data.json
+note over asiakas:
+Asiakas piirtää datan
+end note
+palvelin-->asiakas: 200 /data.json
+asiakas->palvelin: HTTP GET /favicon.ico
+palvelin-->asiakas: 404 /favicon.ico
