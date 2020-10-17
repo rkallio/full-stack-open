@@ -1,3 +1,5 @@
+/* -*- mode: rjsx -*- */
+
 import React from 'react';
 import ReactDOM from 'react-dom'
 import Course from './components/Course'

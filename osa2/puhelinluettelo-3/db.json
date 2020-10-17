@@ -1,0 +1,19 @@
+{
+  "persons": [
+    {
+      "name": "Charles Lecrec",
+      "number": "0400 123",
+      "id": 1
+    },
+    {
+      "name": "Max Verstappen",
+      "number": "0400 291",
+      "id": 2
+    },
+    {
+      "name": "Rubens Barichello",
+      "number": "0400 543",
+      "id": 3
+    }
+  ]
+}
